@@ -38,7 +38,7 @@ public class LinhaDeOnibus implements Serializable {
         return nome + numero;
     }
 
-    /*public static List<LinhaDeOnibus> carregarLinhaOnibusJson(){
+    public static List<LinhaDeOnibus> carregarLinhaOnibusJson(){
 
         try{
             HttpURLConnection connecting = AppHttp.connect(LINHAS_ONIBUS_URL_JSON);
@@ -58,7 +58,7 @@ public class LinhaDeOnibus implements Serializable {
             e.printStackTrace();
         }
         return null;
-    }*/
+    }
 
     public static List<LinhaDeOnibus> readJsonLineBus(JSONObject json) throws JSONException {
 

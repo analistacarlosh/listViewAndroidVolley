@@ -1,34 +1,19 @@
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-    <GridView
-        android:id="@+id/gridview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:clipToPadding="false"
-        android:columnWidth="90dp"
-        android:gravity="center"
-        android:horizontalSpacing="10dp"
-        android:numColumns="auto_fit"
-        android:paddingTop="10dp"
-        android:scrollbarStyle="outsideOverlay"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="10dp" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
-
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgCapa"
+        android:layout_width="75dp"
+        android:layout_height="100dp" />
     <TextView
-        android:id="@android:id/empty"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/progressBar"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:gravity="center"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="@null"/>
+</LinearLayout>

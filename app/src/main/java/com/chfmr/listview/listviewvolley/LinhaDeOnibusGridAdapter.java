@@ -38,7 +38,7 @@ public class LinhaDeOnibusGridAdapter extends ArrayAdapter<LinhaDeOnibus> {
                     .inflate(R.layout.item_linha_grid, null);
         }
 
-        NetworkImageView img = (NetworkImageView)convertView.findViewById(R.id.imgLogo);
+        NetworkImageView img = (NetworkImageView)convertView.findViewById(R.id.imgCapa);
         TextView txt = (TextView)convertView.findViewById(R.id.txtNome);
 
         LinhaDeOnibus linha = getItem(position);

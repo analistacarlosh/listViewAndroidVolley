@@ -22,8 +22,6 @@ public class VolleySingleton {
         mImageLoader = new ImageLoader(this.mRequestQueue, new BitmapCache(50));
     }
 
-
-
     public static VolleySingleton getInstance(Context context) {
         if(mInstance == null){
             mInstance = new VolleySingleton(context);
@@ -31,7 +29,7 @@ public class VolleySingleton {
         return mInstance;
     }
 
-    public RequestQueue getmRequestQueue(){ return this.mRequestQueue; }
+    public RequestQueue getRequestQueue(){ return this.mRequestQueue; }
 
     public ImageLoader getmImageLoader(){ return this.mImageLoader; }
 
